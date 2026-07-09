@@ -27,7 +27,7 @@ export class EmailService {
 
     try {
       const { data, error } = await resend.emails.send({
-        from: from || 'onboarding@resend.dev', // Replace with your verified domain
+        from: from || 'Chase Scroll admin <support@chasescroll.com>', // Replace with your verified domain
         to,
         subject,
         html,
